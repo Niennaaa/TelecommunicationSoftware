@@ -1,0 +1,30 @@
+University:  Harvard University , Rank:  1 , Score:  100.0 
+University:  Stanford University , Rank:  2 , Score:  74.8 
+University:  Massachusetts Institute of Technology (MIT) , Rank:  3 , Score:  69.1 
+University:  University of Cambridge , Rank:  4 , Score:  67.9 
+University:  University of California, Berkeley , Rank:  5 , Score:  63.4 
+University:  Princeton University , Rank:  6 , Score:  60.1 
+University:  University of Oxford , Rank:  7 , Score:  59.5 
+University:  Columbia University , Rank:  8 , Score:  55.3 
+University:  California Institute of Technology , Rank:  9 , Score:  54.5 
+University:  University of Chicago , Rank:  10 , Score:  53.8 
+University:  Yale University , Rank:  11 , Score:  52.2 
+University:  Cornell University , Rank:  12 , Score:  50.5 
+University:  University of California, Los Angeles , Rank:  13 , Score:  48.0 
+University:  University of Pennsylvania , Rank:  14 , Score:  47.7 
+University:  Paris-Saclay University , Rank:  15 , Score:  47.0 
+University:  Johns Hopkins University , Rank:  16 , Score:  46.8 
+University:  University College London , Rank:  17 , Score:  45.9 
+University:  University of Washington , Rank:  18 , Score:  45.4 
+University:  University of California, San Diego , Rank:  19 , Score:  44.8 
+University:  ETH Zurich , Rank:  20 , Score:  44.1 
+University:  University of California, San Francisco , Rank:  21 , Score:  44.0 
+University:  Tsinghua University , Rank:  22 , Score:  40.3 
+University:  Imperial College London , Rank:  23 , Score:  39.9 
+University:  University of Toronto , Rank:  24 , Score:  39.7 
+University:  Washington University in St. Louis , Rank:  25 , Score:  39.0 
+University:  University of Michigan-Ann Arbor , Rank:  26 , Score:  37.8 
+University:  The University of Tokyo , Rank:  27 , Score:  37.7 
+University:  New York University , Rank:  28 , Score:  37.3 
+University:  Peking University , Rank:  29 , Score:  36.7 
+University:  Northwestern University , Rank:  30 , Score:  35.8 
