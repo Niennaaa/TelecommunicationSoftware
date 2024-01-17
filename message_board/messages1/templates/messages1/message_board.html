@@ -5,6 +5,13 @@
 </head>
 <body>
     <h1>Message Board</h1>
+    
+    <form method="post" action="{% url 'message_board' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Post Message</button>
+    </form>
+
     <ul>
         {% for message in messages %}
             <li>{{ message.created_at }}: {{ message.content }}</li>
