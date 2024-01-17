@@ -14,7 +14,7 @@
 
     <ul>
         {% for message in messages %}
-            <li>{{ message.created_at }}: {{ message.content }}</li>
+            <li>{{ message.created_at }} ({{ message.alias }}): {{ message.content }}</li>
         {% endfor %}
     </ul>
 </body>
