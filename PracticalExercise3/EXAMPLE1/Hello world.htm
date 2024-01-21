@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://127.0.0.1:8000/home/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Hello world</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: pulse 1s infinite;
+        }
+        h2 {            
+            font-size: 2em;
+            color: white;
+            margin: 0;
+        }
+
+        .laser {
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            background-color: #ffcc00;
+            animation: laserMove 2s infinite;
+        }
+
+
+        .laser-beam {
+            position: absolute;
+            height: 2px;
+            width: 30px;
+            background-color: #ffcc00;
+            transform-origin: left;
+            animation: laserBeamMove 1s linear;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                color: #00ff00;
+            }
+            25% {
+                transform: scale(1.1);
+                color: #ffcc00;
+            }
+            50% {
+                transform: scale(1);
+                color: #ff5100;
+            }
+            75% {
+                transform: scale(1);
+                color: #ff00fb;
+            }
+            100% {
+                transform: scale(1);
+                color: #0080ff;
+            }
+        }
+
+
+    </style>
+</head>
+<body style="background-color: rgb(100, 21, 46);">
+    <h1>Hello World!</h1>
+    <h2>Click the background for random color</h2>
+    <script>
+        document.addEventListener('click', function() {
+            document.body.style.backgroundColor = getRandomColor();
+        });
+
+        function getRandomColor() {
+            var minChannelValue = 150; // Adjust this value to control darkness
+            var color = '#';
+
+            for (var i = 0; i < 3; i++) {
+                var channelValue = Math.floor(Math.random() * (minChannelValue) );
+                color += channelValue.toString(16).padStart(2, '0');
+            }
+        return color;
+        }
+
+        var previousX = 0;
+        var previousY = 0;
+
+        document.addEventListener('mousemove', function(event) {
+            var laserBeam = document.createElement('div');
+            laserBeam.className = 'laser-beam';
+            var deltaX = event.clientX - previousX;
+            var deltaY = event.clientY - previousY;
+            var angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+
+            laserBeam.style.left = event.clientX + 'px';
+            laserBeam.style.top = event.clientY + 'px';
+            laserBeam.style.transform = 'rotate(' + angle + 'deg)';
+            
+            previousX = event.clientX;
+            previousY = event.clientY;
+            document.body.appendChild(laserBeam);
+            setTimeout(function() {
+                document.body.removeChild(laserBeam);
+            }, 1000);
+        });
+    
+    </script>
+
+
+</body></html>
